@@ -3,6 +3,22 @@
   justify-content: space-between;
   align-items: center;
   max-width: 1140px;
-  padding-top: 88px;
+  padding-top: 48px;
   width: 100%;
+
+  &__menu {
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1439px) {
+  .nav {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 769px) {
+  .nav {
+    max-width: 375px;
+  }
 }

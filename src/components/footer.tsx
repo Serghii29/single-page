@@ -1,23 +1,6 @@
 import React from 'react';
 import '../styles/footer.styles.scss';
 
-// const footerInfo = [
-//   {
-//     title: 'About US',
-//     About: '/',
-//     'What We Do': '/',
-//     Project: '/',
-//     'How It Work With Us': '/',
-//   },
-//   {
-//     title: 'Follow',
-//     Instagram: 'https://www.instagram.com/',
-//     Facebook: 'https://www.facebook.com/',
-//     LinkedIn: 'https://www.linkedin.com/',
-//     Youtube: 'https://www.youtube.com/',
-//   },
-// ];
-
 export const Footer: React.FC = React.memo(() => (
   <footer className="footer">
     <div className="footer__content-wraper">
@@ -31,7 +14,7 @@ export const Footer: React.FC = React.memo(() => (
           </p>
         </div>
         <button type="button" className="footer__button">
-          {'Let\'s Talk'}
+          Let&apos;s Talk
         </button>
       </section>
 

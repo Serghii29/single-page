@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 0;
+  padding: 90px 0;
   width: 100%;
   background-color: #316099;
   border-top-right-radius: 200px;
@@ -12,7 +12,7 @@
   &::after {
     content: '';
     position: absolute;
-    bottom: 55%;
+    bottom: 60%;
 
     width: 100%;
     height: 1px;
@@ -40,6 +40,7 @@
     font-size: 36px;
     line-height: 43px;
     max-width: 306px;
+    letter-spacing: 2px;
   }
 
   &__item {
@@ -52,19 +53,29 @@
 
   &__button {
     padding: 15px 60px;
-    background-color: #5A98D0;
+    background-color: #5a98d0;
     border-radius: 10px;
     font-size: 24px;
     font-weight: 500;
     line-height: 26px;
     color: #fff;
     cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: #4799e3;
+      box-shadow: 5px 10px 20px 0px rgba(53, 110, 173, 0.35);
+    }
+
+    &:active {
+      background-color: #4088c9;
+    }
   }
 
   &__info {
     display: flex;
-    gap: 90px;
-    margin-top: 150px;
+    gap: 95px;
+    margin-top: 140px;
   }
 
   &__contacts {
@@ -76,6 +87,7 @@
   &__logo {
     display: block;
     width: 48px;
+    margin-bottom: 38px;
   }
 
   &__contact-container {
@@ -99,20 +111,71 @@
   &__link-container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 16px;
   }
 
   &__link-header {
     font-weight: 600;
     font-size: 24px;
     line-height: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 32px;
   }
 
   &__rights {
     font-size: 18px;
     line-height: 25px;
     opacity: 40%;
-    margin-top: 50px;
+    margin-top: 66px;
+  }
+}
+
+@media (max-width: 1439px) {
+  .footer {
+    &__content-wraper {
+      max-width: 720px;
+    }
+
+    &::after {
+      bottom: 44%;
+    }
+
+    &__description {
+      flex-direction: column;
+      padding-left: 0;
+      align-items: flex-start;
+      gap: 71px;
+    }
+
+    &__button {
+      margin-bottom: 80px;
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .footer {
+    &::after {
+      bottom: 64%;
+    }
+
+    &__content-wraper {
+      max-width: 375px;
+    }
+
+    &__description {
+      gap: 50px;
+    }
+
+    &__info {
+      flex-direction: column;
+    }
+
+    &__title {
+      max-width: 276px;
+    }
+
+    &__logo {
+      margin-bottom: 32px;
+    }
   }
 }

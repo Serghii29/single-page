@@ -8,7 +8,7 @@ export const NavBar: React.FC = React.memo(() => (
     </a>
 
     <button type="button" className="nav__menu">
-      <img src="/burger-menu.svg" alt="burger menu" />
+      <img src="/burger-menu.png" alt="burger menu" />
       {}
     </button>
   </nav>
